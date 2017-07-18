@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../../resources/css/home.css" rel="stylesheet">
+    <link href="../../resources/css/load/loaders.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="x_panel">
+        <div class="x_title">
+           
+            <ul class="nav navbar-left panel_toolbox">
+                <li style=" min-width: 70px; margin-top: 5px;">用户名:</li>
+                <li style="min-width:150px;">
+                    <label for="sel_userinfo"></label>
+                    <select class="selectpicker selectpicker bla bla bli" data-live-search="true" id="sel_userinfo" tabindex="-1"></select></li>
+                
+                <li>
+                    <button type="button" id="btnSearchPos" class="btn btn-success">查询</button>
+                </li>
+                <li>
+                    <button type="button" id="btn_print" class="btn btn-success">打印刷卡明细</button>
+                </li>
+                <li>
+                    <button type="button" id="btn_print_xf" class="btn btn-success">打印消费明细</button>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content" style="overflow-y:auto;">
+            <table id="pos_t" class="table table-bordered"></table>
+        </div>
+    </div>
+    <input type="hidden" value="" id="hID" />
+    <script src="../../resources/js/pos/posManager.js"></script>
+</body>
+</html>

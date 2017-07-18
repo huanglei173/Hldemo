@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../../resources/css/home.css" rel="stylesheet">
+    <link href="../../resources/css/load/loaders.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Boardered table <small>Bordered table subtitle</small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <button type="button" id="btn_xf" class="btn btn-success">续费</button>
+                </li>
+                <li>
+                    <button type="button" id="btn_fx" class="btn btn-success">返现</button>
+                </li>
+                <li>
+                    <button type="button" id="btn_email" class="btn btn-success">邮件</button>
+                </li>
+                <li>
+                    <button type="button" id="btn_fm" class="btn btn-success">返码</button>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content" style="overflow-y:auto;">
+            <table id="user_t" class="table table-bordered"></table>
+        </div>
+    </div>
+    <div class="maskPanel">
+        <div class="mask_list">
+            <div class="loader">
+                <div class="loader-inner pacman">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="mask_title"></div>
+        </div>
+    </div>
+    <input type="hidden" id="hID" value="" />
+    <script src="../../resources/js/user/user_controller.js"></script>
+    <script src="../../resources/js/user/userManager.js"></script>
+</body>
+
+</html>

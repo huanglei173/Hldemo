@@ -1,0 +1,23 @@
+﻿body {
+    MARGIN: 0 AUTO;
+    FONT-FAMILY: serif;
+     
+}
+.p_m_title {
+    text-align: center;
+    font-size: 13px;
+}
+
+.p_m_ck {
+position:relative;
+}
+.p_m_right {
+    POSITION: absolute;
+    right: 0;
+    top: 0;
+}
+.dashed_line {
+    width: 100%;
+    border-top: 1px dashed #999;
+    margin: 5px 0;
+}

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript">
+        function aa() {
+            var a = 4;
+            var b = 3;
+            var x = 10;
+            var temp = 0;
+            var hourx = 0;
+            // document.getElementById('xxx').innerHTML = x - (x - a) % b;
+            var xx = x - (x - a) % b;
+            console.log(xx);
+            if (x - xx > 0)
+                xx = xx + b;
+            document.getElementById('xxx').innerHTML = xx;
+        }
+    </script>
+</head>
+<body onload="aa()">
+    <div id="xxx"></div>
+</body>
+</html>

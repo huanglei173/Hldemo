@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../../resources/css/home.css" rel="stylesheet" />
+    <link href="../../resources/css/print.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="print_marchant">
+        <div class="x_content">
+            <br />
+            <div class="p_m_title">银联POS签购单</div>
+            <div class="dashed_line"></div>
+            <div class="dm"></div>
+            <div class="p_m_ck">
+                持卡人存根
+                <div class="p_m_right">CARDHOLDER COPY</div>
+            </div>
+            <div class="dashed_line"></div>
+            <div class="p_m_content">
+                <div>商户名称(MERCHANT NAME):</div>
+                <div><label id="pos_m_name"></label></div>
+                <div>商户编号(MERCHANT NO.):</div>
+                <div> <label id="pos_m_no"></label></div>
+                <div>终端编号(TERMINAL NO.):</div>
+                <div> <label id="pos_zd_no"></label></div>
+                <div>操作员号(OPERATOR NO.):<label id="pos_cz_no"></label></div>
+                <div class="dashed_line"></div>
+                <div>发卡行(ISSUER):<label id="pos_bank_name"></label></div>
+                <div>收单行(ACQ)   :<label id="pos_sd_bank"></label></div>
+                <div>卡号(CARD NO):</div>
+                <div><label id="pos_bank_no"></label>&nbsp;︱</div>
+                <div>交易类型(TXN. TYPE):</div>
+                <div>消费(SALE)</div>
+                <div>卡有效期(EXP. DATE):<label>2015/03</label></div>
+                <div>批次号(BATCH NO.):<label id="pos_pc_no"></label></div>
+                <div>凭证号(VOUCHER NO.):<label id="pos_pz_no"></label></div>
+                <div>日期/时间(DATE/TIME):</div>
+                <div><label id="pos_sk_date"></label></div>
+                <div>交易参考号(REF. NO.):<label id="pos_ck_no"></label></div>
+                <div>金额(AMOUNT):</div>
+                <div style="text-align:center" class="p_m_price"><label id="pos_sk_price"></label>  </div>
+                <div class="dashed_line"></div>
+            </div>
+            <div class="pm_footer">
+                <div>备注/REFEREMCE:</div>
+            </div>
+        </div>
+    </div>
+    <div id="print_commodity">
+        <div class="x_content">
+            <div class="xf_title"><label id="sh_name_1">深圳市博荣电商城</label> </div>
+            <div class="xf_t_1">收银号:<label id="xf_syh_1"></label></div>
+            <div class="xf_dotted"></div>
+            <div class="xf_t_1">日期:<label id="xf_time_1">2017.03.01 21:19:06</label></div>
+            
+            <div class="xf_dotted"></div>
+            <div class="sp_list" id="sp_list_1">
+            </div>
+            <div class="xf_t_list">
+                <div class="xf_t_sx">商品名称</div>
+                <div class="xf_t_sp">数量</div>
+                <div class="xf_t_sp">单价</div>
+            </div>
+            <div id="sp_list_price_1">
+
+            </div>
+            <div class="xf_t_1">应收金额:<label id="sp_total_1">0.00</label> </div>
+            <div class="xf_footer">
+                <h3>欢迎光临</h3>
+                <h4>谢谢您的惠顾</h4>
+                <div class="xf_t_l">如需发票请到柜台开具</div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../resources/js/common.js"></script>
+    <script src="../../resources/js/union/print.js"></script>
+    
+</body>
+</html>

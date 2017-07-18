@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>打印POS单</title>
+    <link href="../../resources/css/home.css" rel="stylesheet">
+    
+    <link href="../../resources/css/load/loaders.css" rel="stylesheet">
+     
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Form validation <small>sub title</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Settings 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left" novalidate>
+                        <form class="form-horizontal form-label-left" novalidate>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    用户名: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="sel_userinfo"></label>
+                                    <select class="selectpicker selectpicker bla bla bli" data-live-search="true" id="sel_userinfo" tabindex="-1"></select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    商户名称: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                     
+                                    <select class="select2_single form-control" id="sel_merchant" tabindex="-1">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    金额: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="txt_price" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2"  required="required" type="number">
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    日期: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" class="form-control has-feedback-right" id="sk_date" placeholder="First Name" aria-describedby="xxgxx">
+                                    <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+                                    <span id="xxgxx" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button type="button" id="btnSave_sk_list" class="btn btn-success">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="print-div">
+                    <div id="div_merchant"></div>
+                    <br />
+                    <br />
+                    
+                    <div id="div_sel_userinfo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>POS单模板</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <div class="p_m_title">银联POS签购单</div>
+                    <div class="dashed_line"></div>
+                    <div class="dm"></div>
+                    <div class="p_m_ck">
+                        持卡人存根
+                        <div class="p_m_right">CARDHOLDER COPY</div>
+                    </div>
+                    <div class="dashed_line"></div>
+                    <div class="p_m_content">
+                        <div>商户名称(MERCHANT NAME):</div>
+                        <div><label id="pos_m_name"></label></div>
+                        <div>商户编号(MERCHANT NO.):</div>
+                        <div> <label id="pos_m_no"></label></div>
+                        <div>终端编号(TERMINAL NO.):</div>
+                        <div> <label id="pos_zd_no"></label></div>
+                        <div>操作员号(OPERATOR NO.):<label id="pos_cz_no"></label></div>
+                        <div class="dashed_line"></div>
+                        <div>发卡行(ISSUER):<label id="pos_bank_name"></label></div>
+                        <div>收单行(ACQ)   :<label id="pos_sd_bank"></label></div>
+                        <div>卡号(CARD NO):</div>
+                        <div><label id="pos_bank_no"></label>&nbsp;︱</div>
+                        <div>交易类型(TXN. TYPE):</div>
+                        <div>消费(SALE)</div>
+                        <div>卡有效期(EXP. DATE):<label>2015/03</label></div>
+                        <div>批次号(BATCH NO.):<label id="pos_pc_no"></label></div>
+                        <div>凭证号(VOUCHER NO.):<label id="pos_pz_no"></label></div>
+                        <div>日期/时间(DATE/TIME):</div>
+                        <div>2017/03/24 21:18:29</div>
+                        <div>交易参考号(REF. NO.):<label id="pos_ck_no"></label></div>
+                        <div>金额(AMOUNT):</div>
+                        <div style="text-align:center" class="p_m_price"><label id="pos_price">RMB:39990.99</label>  </div>
+                        <div class="dashed_line"></div>
+                    </div>
+                    <div class="pm_footer">
+                        <div>备注/REFEREMCE:</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="../../resources/js/common.js"></script>
+    <script src="../../resources/js/union/printMerchant.js"></script>
+    <script src="../../resources/js/localconfig.js"></script>
+</body>
+</html>

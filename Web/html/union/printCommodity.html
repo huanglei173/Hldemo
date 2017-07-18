@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gentelella Alela! | </title>
+    <link href="../../resources/css/home.css" rel="stylesheet">
+    <link href="../../resources/css/load/loaders.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Form validation <small>sub title</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Settings 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left" novalidate>
+                        <form class="form-horizontal form-label-left" novalidate>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    用户名: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="sel_userinfo"></label>
+                                    <select class="selectpicker selectpicker bla bla bli" data-live-search="true" id="sel_userinfo" tabindex="-1"></select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    商户名称: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <select class="select2_single form-control" id="sel_merchantByinfo" tabindex="-1"></select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                    商品总价: <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="txt_price" disabled="disabled" required="required" class="form-control col-md-7 col-xs-12">
+                                    相差金额:<label id="la_total">0</label>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="item form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="xp">
+                                        <table class="table table-bordered">
+                                            <thead style='white-space:nowrap;'>
+                                            <th></th>
+                                            <th>商品名称</th>
+                                            <th>商品单价</th>
+                                            <th>商品数量</th>
+                                            </thead>
+                                            <tbody id="div_commodity"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button type="button" id="btnSave_sk_list" class="btn btn-success">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+             
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>POS单模板</h2>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="x_content">
+                    <div class="xf_title"><label id="sh_name_1">深圳市博荣电商城</label> </div>
+                    <div class="xf_t_1">收银号:<label id="xf_syh_1">30139</label></div>
+                    <div class="xf_dotted"></div>
+                    <div class="xf_t_1">日期:<label id="xf_time_1">2017.03.01 21:19:06</label></div>
+                    <div class="xf_t_name">商品名称</div>
+                    <div class="xf_dotted"></div>
+                    <div class="sp_list" id="sp_list_1">
+                    </div>
+                    <div class="xf_t_list">
+                        <div class="xf_t_sp">单价</div>
+                        <div class="xf_t_sp">数量</div>
+                        <div class="xf_t_sp">总价</div>
+                    </div>
+                    <div id="sp_list_price_1">
+
+                    </div>
+                    <div class="xf_t_1">应收金额:<label id="sp_total_1">0.00</label> </div>
+                    <div class="xf_footer">
+                        <h3>欢迎光临</h3>
+                        <h4>谢谢您的惠顾</h4>
+                        <div class="xf_t_l">如需发票请到柜台开具</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    <script src="../../resources/js/common.js"></script>
+    <script src="../../resources/js/union/print_controller.js"></script>
+    <script src="../../resources/js/localconfig.js"></script>
+</body>
+</html>

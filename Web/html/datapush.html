@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+</head>
+<body>
+    <div class="x_content dx">
+        
+        <button type="button" id="btn_exp_user" class="btn btn-success btn-app" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <i class="fa fa-pause"></i>
+            导入用户
+        </button>
+        <button type="button" id="btn_exp_merchant" class="btn btn-success btn-app" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <i class="fa fa-pause"></i>
+            导入商户
+        </button>
+        <button type="button" id="btn_exp_commodity" class="btn btn-success btn-app" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <i class="fa fa-pause"></i>
+            导入商品
+        </button>
+
+    </div>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">导入数据</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="x_panel">
+                        <div class="input-group demo2">
+                            <input type="text" id="fileName" class="form-control" />
+                            <span class="input-group-addon" onclick="selectFiles()">
+                                <i class="glyphicon glyphicon-folder-open"></i>&nbsp;&nbsp;文件上传
+                            </span>
+                            <input type="file" class="hidden" name="fileToUpload" id="fileToUpload" />
+                        </div>
+                        <div class="x_content" style="height:35px;">
+                            <div style="position:absolute;right:0;"><button type="button" data-value="default" id="btn_model_UpFiles" class="btn btn-success">开始上传</button></div>
+                        </div>
+                        <div class="x_content overflowy" id="modal_content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/js/datapush.js?2018"></script>
+</body>
+</html>
